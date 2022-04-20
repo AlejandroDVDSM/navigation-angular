@@ -22,4 +22,12 @@ export class HomeComponent implements OnInit {
   displayDetails(movie: any) {
     this.router.navigate(['/details', movie])
   }
+
+  deleteMovie(i: number) {
+    console.log("INDEX " + i)
+    this.service.getAllMovies().subscribe(movies => {
+      movies.splice(i, 1)
+      
+    })
+  }
 }

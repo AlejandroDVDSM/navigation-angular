@@ -1,6 +1,6 @@
 /* Master Styles */
 h1 {
-  color: #369;
+  color: rgb(95, 156, 216);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
@@ -9,8 +9,12 @@ h2, h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
+p {
+  color: white
+}
 body {
   margin: 2em;
+  background-color: #424242; /* ADDED */
 }
 body, input[text], button {
   color: #888;
@@ -44,7 +48,7 @@ nav a {
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
-  background-color: #eee;
+  background-color: #242323;
   border-radius: 4px;
 }
 nav a:visited, a:link {
@@ -52,7 +56,7 @@ nav a:visited, a:link {
 }
 nav a:hover {
   color: #039be5;
-  background-color: #CFD8DC;
+  background-color: #302f2f;
 }
 nav a.active {
   color: #039be5;
