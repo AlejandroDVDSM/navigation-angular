@@ -4,14 +4,14 @@ import { v4 as uuidv4 } from "uuid";
 
 interface Movie {
   id: string
-  name: string
-  release: string
-  runningTime: string
-  director: string
-  scriptwriter: string
-  imdbRating: number
-  metascoreRating: number
-  notes: string
+  name: string | undefined
+  release: string | undefined
+  runningTime: string | undefined
+  director: string | undefined
+  scriptwriter: string | undefined
+  imdbRating: number | undefined
+  metascoreRating: number | undefined
+  notes: string | undefined
 }
 
 @Injectable({

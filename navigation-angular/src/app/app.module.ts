@@ -12,6 +12,7 @@ import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { DetailsComponent } from './details/details.component';
+import { NewMovieComponent } from './new-movie/new-movie.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { DetailsComponent } from './details/details.component';
     routingComponents,
     PagenotfoundComponent,
     DetailsComponent,
+    NewMovieComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,7 @@ import { DetailsComponent } from './details/details.component';
     MatButtonModule,
     FormsModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
