@@ -1,18 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatListModule } from '@angular/material/list';
 
-import { AppRoutingModule } from './app-routing.module';
+
+
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { DetailsComponent } from './details/details.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    routingComponents,
+    PagenotfoundComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
