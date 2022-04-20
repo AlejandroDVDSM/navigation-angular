@@ -22,5 +22,4 @@ export class HomeComponent implements OnInit {
   displayDetails(movie: any) {
     this.router.navigate(['/details', movie])
   }
-
 }

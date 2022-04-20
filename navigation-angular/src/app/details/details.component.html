@@ -1,9 +1,24 @@
-<p>details works!</p>
-<h4>Movie {{movieID}}</h4>
-<h4>Movie {{movieName}}</h4>
-<h4>Movie {{movieRelease}}</h4>
-<h4>Movie {{movieRunningTime}}</h4>
-<h4>Movie {{movieDirector}}</h4>
-<h4>Movie {{movieScriptwriter}}</h4>
-<h4>Movie {{movieIMDBRating}}/10</h4>
-<h4>Movie {{movieMetascoreRating}}/100</h4>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{movieName}} ({{movieRelease}})</mat-card-title>
+        <mat-card-subtitle>{{movieDirector}} | {{movieRunningTime}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item>Scriptwriter: {{movieScriptwriter}}</mat-list-item>
+            <mat-list-item>IMDBRating: {{movieIMDBRating}}</mat-list-item>
+            <mat-list-item>MetascoreRating: {{movieMetascoreRating}}</mat-list-item>
+            <mat-list-item>Notes: {{movieNotes}}</mat-list-item>
+        </mat-list>
+
+        <mat-form-field>
+            <mat-label>Notes</mat-label>
+            <textarea class="textareaNotes" matInput placeholder={{movieNotes}} [(ngModel)]="newNotes"></textarea>
+        </mat-form-field>
+    </mat-card-content>
+    
+    <mat-card-actions>
+        <button mat-raised-button color="accent" (click)="editNotes()">Edit notes</button>
+    </mat-card-actions>
+</mat-card>
