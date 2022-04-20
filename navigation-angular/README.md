@@ -10,7 +10,7 @@ If you are eager to increase your list, then you can navigate to the "Add movie"
 
 Finally, if you want to remove one movie of your list, you can click on the trash button.
 
-The link to the deployment of the application is the next:
+The link to the deployment of the application is the next: [https://navigation-angular.netlify.app] (https://navigation-angular.netlify.app)
 
 ## Development server
 
